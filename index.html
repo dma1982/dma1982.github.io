@@ -1,1 +1,367 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<head>
+<title>Da Ma</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2>Da Ma</h2>
+<p>He graduated from <a href="http://www.jlu.edu.cn/newjlu/">Jilin University</a>, majoring in grid computing. After graduation, he joined Baidu as R&amp;D engineer of the Ministry of the Web search; subsequently, he transferred to IT department, and committed to the development of workflow software which was used by <a href="http://e.baidu.com/">Baidu Phoenix Nest</a> and lots of systems. As an IBMer, he is the team lead in China of [Platform Symphony](http://www-03.ibm.com/systems/technicalcomputing/platformcomputing/products/symphon...(line truncated)...</p>
+<h3>Interests</h3>
+<p>Distributed Computing, Grid, Cloud, Project Management (PMP©) </p>
+<h3>Experience</h3>
+<ul>
+<li><strong>Advisory Software Engineer</strong>: Platform Computing, an IBM company (2014/07 ~ Present) at Beijing</li>
+<li><strong>Team Lead of CE &amp; L3</strong>: Platform Computing, an IBM company (2014/06 ~ Present) at Beijing</li>
+<li><strong>Team Lead of CE</strong>: Platform Computing, an IBM company (2011/11 ~ 2014/06) at Beijing</li>
+<li><strong>Software Engineer</strong>: Platform Computing (2010/09 ~ 2011/11) at Beijing</li>
+<li><strong>Software Engineer</strong>: Baidu (2008/06 ~ 2010/08) at Beijing</li>
+<li><strong>Researcher</strong>: Platform Computing Grid Technology Research Center at Jilin University (2005/09 ~ 2008/06) at Changchun</li>
+</ul>
+<h3>Contacts</h3>
+<p><strong>Phone</strong>: N/A; <strong>E-mail</strong>: <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#109;&#x61;&#100;&#x61;&#x2e;j&#x6c;&#x75;&#x40;&#104;&#x6f;&#x74;&#x6d;&#x61;i&#108;&#x2e;&#x63;&#111;&#109;">&#x6d;&#x61;&#x64;&#97;&#x2e;&#106;&#108;&#117;&#64;&#104;&#111;&#116;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#x6d;</a>; <strong>MSN</strong>: <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#109;&#x61;&#100;&#x61;&#x2e;j&#x6c;&#x75;&#x40;&#104;&#x6f;&#x74;&#x6d;&#x61;i&#108;&#x2e;&#x63;&#111;&#109;">&#x6d;&#x61;&#x64;&#97;&#x2e;&#106;&#108;&#117;&#64;&#104;&#111;&#116;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#x6d;</a> </p>
+<h3>Projects</h3>
+<p><strong>Multiple Tasks in One Service Instance (MTS)</strong></p>
+<p>In IBM Platform Symphony, it's used to be one process for each running task in compute
+host; it's un-convinced for user to share data &amp; computing result. With MTS feature, there
+is only one service instance/process for all running tasks from the same job or application.
+As the owner of the project, worked on drafting FS, coding and driving the release.</p>
+<p><strong>Tools</strong>: C/C++, GDB, gtest, ACE</p>
+<p><strong>Service Affinity Group (SAG)</strong></p>
+<p>The target of this project is to avoid the overhead when slots transfer between burst jobs,
+by allowing different jobs in the same SAG will run on the same service instance where the
+data has previously been loaded. As the owner of the project, worked on drafting FS,
+coding and driving the release.</p>
+<p><strong>Tools</strong>: C/C++, Java, GDB, gtest, ACE</p>
+<p><strong>Recursive Workload</strong></p>
+<p>Customer's workload pattern is recursive, where a task (parent task) will create another
+job (child job) and generate more tasks (child tasks) that are submitted to the child job.
+After post-submission processing, parent task will wait for its child tasks to complete.
+While it waits, the compute slot is wasted. To increase resource usage, this feature allows
+a running task to yield the slot(s), which can be used to run the tasks of its direct
+descendants. As local peer, worked with Toronto team on coding, bug fix and driving
+release.</p>
+<p><strong>Tools</strong>: C/C++, Java, GDB, gtest, ACE</p>
+<p><strong>R/Python integration</strong></p>
+<p>R &amp; Python are two major integration projects. IBM Platform symphony provides lots of
+API for user to submit/create task to the cluster system. The purpose of integration
+project is to provide a native API in those programming language. As a project member,
+worked on researching, coding &amp; bug fix.</p>
+<p><strong>Tools</strong>: C/C++, R/Python, GDB</p>
+<p><strong>20K cores per application (Multiple-SSM)</strong></p>
+<p>The multi-ssm feature provides better scalability by employing multiple physical
+applications to do the real work. Jobs created in logical application are logical jobs, which
+internally be mapped to a physical job of one physical application, or physical jobs of
+multiple physical applications. Tasks of a logical job will be redirected to the related
+physical job(s). Take part in the project as a freshman, worked on coding and unit testing;
+and help QA on system test.</p>
+<p><strong>Tools</strong>: C/C++, R/Python, GDB</p>
+<p><strong>Workflow form engine</strong></p>
+<p>In workflow, forms engine is another key module to submit, process and display data. The
+purpose of this project is to provide a WYSIWYG system for administrator to manage
+workflow forms, a data processing system to handle user's input and a display system to
+generate form according to workflow's status and data. As the owner of project, worked
+on researching, design and coding.</p>
+<p><strong>Tools</strong>: JEE, MySQL, Shark (workflow), JavaScript/Html/Css</p>
+<h3>Education</h3>
+<p><strong>Jilin University</strong>
+Master, Computer Science and technology 2005 – 2008</p>
+<ol>
+<li>“Customized Plug-in Modules in Meta-scheduler CSF4 for Life Sciences Applications”, Special Issue on Life Science Grid Computing of New Generation Computing, Vol. 25-4, August 2007</li>
+<li>“VJM - A Deadlock Free Resource Co-allocation Model for Cross Domain Parallel Jobs”, HPC Asia 2007</li>
+<li>“VJM - A Deadlock Free Resource Co-allocation Model for Cross Domain Parallel Jobs”, NBCR Summer Institute 2007</li>
+<li>“VJM - A Deadlock Free Resource Co-allocation Model for Cross Domain
+Parallel Jobs”, Journal of Software, pending</li>
+</ol>
+<p><strong>JiLin University</strong>
+BS, Computer Science and technology 2001 – 2005</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
